@@ -6,6 +6,6 @@ COPY ./app /app
 COPY requirements.txt /app/
 WORKDIR /app
 
-RUN pip install -r requirements.txt && rm requirements.txt
+RUN pip install -r requirements.txt && pip install jupyter && rm requirements.txt
 
 CMD jupyter notebook --port=8888 --ip=0.0.0.0 --NotebookApp.token='' --allow-root

@@ -14,9 +14,9 @@ class Kohonen():
         init_rad = max(self.sizeX, self.sizeY) / 2
         time_constant = nmax_iter / np.log(init_rad)
         
-        for idx, V in enumerate(input_data):
-            bmu_idx = self.BMU_calculator(V, node_weights)
-            for t in range(0, nmax_iter):
+        for t in range(1, nmax_iter+1):
+            for idx, V in enumerate(input_data):
+                bmu_idx = self.BMU_calculator(V, node_weights)
                 nbr_rad = init_rad*np.exp(-t / time_constant)
                 nbr_nodes = self.get_nbr_nodes(bmu_idx, nbr_rad)
                 node_weights = self.update_weights_nbrs(t, bmu_idx, V, nbr_nodes, node_weights, time_constant, nbr_rad)

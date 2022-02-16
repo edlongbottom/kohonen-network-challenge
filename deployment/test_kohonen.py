@@ -1,5 +1,5 @@
 import unittest
-from kohonen import Kohonen
+from app.kohonen import Kohonen
 
 class TestKohonen(unittest.TestCase):
 
