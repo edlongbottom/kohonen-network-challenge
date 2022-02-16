@@ -1,12 +1,12 @@
 # Kohonen Network Challenge
 
-### Walkthrough
-See the *kohonen_demo.ipynb* notebook for the walkthrough of how I developed a Self-Organized Map (SOM) model in Python/NumPy.  
+## Walkthrough
+See the *kohonen_demo.ipynb* notebook for the walkthrough of developing a Self-Organized Map (SOM) model in Python/NumPy.  
 
-### Productionise
+## Productionise
 The steps below outline how to run the model from a Jupyter notebook in a docker container on your own device. 
 
-**Steps:**
+### Steps:
 Git clone this repo and navigate to the *deployment* folder. 
 
 Build the docker image:
