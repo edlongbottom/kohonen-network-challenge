@@ -1,6 +1,6 @@
 import numpy as np
 
-class kohonen():
+class Kohonen():
     
     def __init__(self, sizeX, sizeY):
         self.sizeX, self.sizeY = sizeX, sizeY
